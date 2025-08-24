@@ -69,7 +69,7 @@ async def extract_text(file: UploadFile = File(...)):
 
         os.remove(temp_file)
 
-        return {"filename": file.filename, "extracted_text": extracted_text}
+        return {"extracted_text": extracted_text}
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))

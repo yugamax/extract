@@ -5,3 +5,4 @@ PyMuPDF
 python-dotenv
 Pillow
 google-generativeai
+python-multipart

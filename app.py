@@ -14,9 +14,7 @@ app = FastAPI()
 # Enable CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://nuvia-ai.vercel.app",
-        "http://localhost:5173",
-        "http://127.0.0.1:8000"],  # Change "*" to specific domains for security
+    allow_origins=["https://nuvia-ai.vercel.app"],  # Change "*" to specific domains for security
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
